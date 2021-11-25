@@ -68,7 +68,7 @@ var tvDescriptionShortDetail: TextView = findViewById(R.id.tvDescriptionShortDet
 var tvCategoryDetail: TextView = findViewById(R.id.tvCategoryDetail)
 var tvDateDetail: TextView = findViewById(R.id.tvDateDetail)
 var tvDescriptionDetailData: TextView = findViewById(R.id.tvDescriptionDetailData)
-var tvOffertDetailData: TextView = findViewById(R.id.tvOffertDetailData)
+var tvOfferDetailData: TextView = findViewById(R.id.tvOfferDetailData)
 var tvWebsiteDetailData: TextView = findViewById(R.id.tvWebsiteDetailData)
 var tvDateEndData: TextView = findViewById(R.id.tvDateEndData)
 var imgHeaderDetail: ImageView = findViewById(R.id.imgHeaderDetail)
@@ -79,7 +79,7 @@ tvDescriptionShortDetail.text = couponSelected?.descriptionShort
 tvCategoryDetail.text = couponSelected?.category
 tvDateDetail.text = couponSelected?.endDate
 tvDescriptionDetailData.text = couponSelected?.description
-tvOffertDetailData.text = couponSelected?.offer
+tvOfferDetailData.text = couponSelected?.offer
 tvWebsiteDetailData.text = couponSelected?.website
 tvDateEndData.text = couponSelected?.endDate
 Picasso.get().load(couponSelected?.image_url).resize(520, 520).centerCrop().into(imgHeaderDetail)
